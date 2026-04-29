@@ -1,10 +1,25 @@
-# DEV-2 - Correct Bugs in a Legacy Project
+# Starter repo - DEV-2
 
-This exercise fixes a deliberately broken Flask project using the test feedback loop.
+Deliberately broken Flask project.
 
-Files:
+## Setup
 
-- `INSTALLATION.md`: prerequisites and setup.
-- `GUIDE.md`: step-by-step exercise instructions.
-- `SCRIPT_VIDEO.md`: French script for the illustration video.
-- `repo/`: starter repository.
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+pytest test_buggy_app.py -v
+```
+
+## Files
+
+- `buggy_app.py`: application with 5 intentional bugs.
+- `test_buggy_app.py`: verification tests.
+
+## Goal
+
+Fix `buggy_app.py` until you get:
+
+```text
+5 passed
+```
